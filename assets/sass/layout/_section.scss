@@ -3,7 +3,7 @@ section {
     height: auto;
     background-color: $background-color;
     display: flex;
-    flex-direction: row;
-    
-    
+    flex-wrap: wrap;
+    padding: 200px 0;
+    row-gap: 3rem;
 }
