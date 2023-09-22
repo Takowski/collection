@@ -3,12 +3,10 @@
     color: $font-color;
     border-radius: 5px;
     padding: 10px;
-    width: 30rem;
+    width: 25rem;
 
 
     .card__title{
-        display: flex;
-        justify-content: space-between;
         color: $font-color;
         font-size: 1.5rem;
         font-weight: bold;

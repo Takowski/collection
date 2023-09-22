@@ -93,40 +93,36 @@ const objets = [
     },
 ]
 
-// for each object create a card an append it to the container
 
 objets.forEach((objet) => {
     const card = document.createElement("div")
     card.classList.add("card")
     card.innerHTML = `
-    <div class="card__image">
-        <img src="${objet.image}" alt="game image">
-    </div>
-    <div class="card__content">
-        <div class="card__content__title">
-            <h2>${objet.name}</h2>
+    <div class="card__front">
+        <div class="card__image">
+            <img src="${objet.image}" alt="game image">
         </div>
-        <div class="card__content__genre">
-            <p>${objet.genre}</p>
-        </div>
-        <div class="card__content__platform">
-            <p>${objet.platform}</p>
-        </div>
-        <div class="card__content__status">
-            <p>${objet.status}</p>
+        <div class="card__content">
+            <div class="card__content__title">
+                <h2>${objet.name}</h2>
             </div>
-            <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-container w3-blue w3-round-xlarge" style="width:${objet.progress}">${objet.progress}</div>
+            <div class="card__content__genre">
+                <p>${objet.genre}</p>
             </div>
-        <div class="card__content__studio">
-            <p>${objet.studio}</p>
+            <div class="card__content__platform">
+                <p>${objet.platform}</p>
+            </div>
+            <div class="card__content__studio">
+                <p>${objet.studio}</p>
+            </div>
+        <div class="card__content__button">
+            <button class="btn">Delete</button>    
+        </div>
         </div>
         <div class="card__content__description">
             <p>${objet.shortdescription}</p>
         </div>
-        <div class="card__content__button">
-            <button class="btn">Delete</button>    
-        </div>
+        
     </div>
     `;
     const container = document.querySelector(".container")

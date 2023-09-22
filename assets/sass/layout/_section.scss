@@ -1,9 +1,11 @@
 section {
     width: 100%;
-    height: auto;
-    background-color: $background-color;
+    background-color: $section-color;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 200px 0;
     row-gap: 3rem;
+    column-gap: 3rem;
+    
 }
